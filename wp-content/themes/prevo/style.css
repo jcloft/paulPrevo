@@ -1,0 +1,940 @@
+@font-face {
+  font-family: "odin";
+  src: url("fonts/odin.otf");
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("fonts/Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "latoitalic";
+  src: url("fonts/Lato-Lightitalic.ttf");
+}
+
+@font-face {
+  font-family: "paul";
+  src: url("fonts/font.otf");
+}
+
+/* line 21, style.scss */
+.wrapper {
+  max-width: 1200px;
+}
+
+/* line 26, style.scss */
+.row {
+  margin-left: 0 !important;
+}
+
+/* line 30, style.scss */
+.menu {
+  position: absolute;
+  display: none;
+}
+
+/* line 35, style.scss */
+#main {
+  -webkit-transition: all ease-in .2s;
+}
+
+/* line 38, style.scss */
+#thenav {
+  -webkit-transiton: all ease-in 2s;
+}
+
+/* line 43, style.scss */
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* line 48, style.scss */
+.nav-visible {
+  background: white;
+}
+
+/* line 53, style.scss */
+.container-fluid {
+  padding: 0 !important;
+}
+
+/* line 57, style.scss */
+body {
+  overflow-x: hidden;
+  background: #004A91;
+  min-height: 0!important;
+  margin-top: 80px;
+  /************* Body ******************/
+}
+/* line 63, style.scss */
+body .navbar {
+  background: #3DAF53;
+  padding-top: 10px;
+  padding-left: 75px;
+  height: 120px;
+  border-bottom: 3px solid white;
+}
+/* line 69, style.scss */
+body .navbar .navbar-toggle {
+  border: none;
+}
+/* line 74, style.scss */
+body .navbar .navbar-brand {
+  height: 90px;
+  width: 220px;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 100px;
+  float: none;
+}
+/* line 83, style.scss */
+body .navbar .navbar-brand img {
+  border: 2px solid white;
+  max-height: 105px;
+  margin-left: 75px;
+  margin-top: -5px;
+}
+/* line 94, style.scss */
+body .navbar .nav {
+  margin-top: 22px;
+  margin-left: 12px;
+}
+/* line 100, style.scss */
+body .navbar li {
+  margin-right: 5px;
+}
+/* line 105, style.scss */
+body .navbar li a {
+  color: white !important;
+  font-family: 'lato';
+  font-size: 20px;
+}
+/* line 110, style.scss */
+body .navbar li a:hover {
+  color: black !important;
+}
+/* line 118, style.scss */
+body .navbar #volunteer, body .navbar #donate {
+  border: 2px solid white;
+}
+/* line 122, style.scss */
+body .navbar #donate {
+  margin-left: 5px;
+  background: #004A91;
+}
+/* line 132, style.scss */
+body .container {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  width: 100%;
+  /* Volunteer */
+}
+/* line 138, style.scss */
+body .container .cols {
+  position: relative;
+}
+/* line 140, style.scss */
+body .container .cols::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url("images/cols.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -2;
+  margin-top: -80px;
+  margin-left: -60px;
+}
+/* line 152, style.scss */
+body .container .cols::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* line 165, style.scss */
+body .container .jailhouse {
+  position: relative;
+}
+/* line 167, style.scss */
+body .container .jailhouse::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url("images/jailhouse.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  margin-top: -80px;
+  margin-left: -60px;
+}
+/* line 179, style.scss */
+body .container .jailhouse::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+/* line 192, style.scss */
+body .container .morgan {
+  position: relative;
+}
+/* line 194, style.scss */
+body .container .morgan::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url("images/morganthaler.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  margin-top: -80px;
+  margin-left: -60px;
+}
+/* line 211, style.scss */
+body .container #top .jumbotron {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  margin-bottom: 0;
+  padding-top: 80px;
+  background: rgba(0, 74, 145, 0.9);
+}
+/* line 225, style.scss */
+body .container #top .jumbotron #volunteerMod .textbox {
+  font-family: 'lato';
+  height: 285px;
+  width: 550px;
+  padding-top: 20px;
+  background: rgba(255, 255, 255, 0.6);
+}
+/* line 233, style.scss */
+body .container #top .jumbotron #volunteerMod .textbox #left {
+  padding-left: 3px;
+  height: 100%;
+  font-style: italic;
+}
+/* line 239, style.scss */
+body .container #top .jumbotron #volunteerMod .textbox #left::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 22px;
+  height: 90%;
+  width: 1px;
+  /* or 100px */
+  border-right: 1px solid #666;
+}
+/* line 249, style.scss */
+body .container #top .jumbotron #volunteerMod .textbox #left h1 {
+  font-size: 48px;
+}
+/* line 256, style.scss */
+body .container #top .jumbotron #volunteerMod .textbox #right {
+  height: 100%;
+}
+/* line 259, style.scss */
+body .container #top .jumbotron #volunteerMod .textbox #right #nameinput {
+  margin-bottom: 5px;
+  border-radius: 0;
+}
+/* line 264, style.scss */
+body .container #top .jumbotron #volunteerMod .textbox #right #emailinput {
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+/* line 270, style.scss */
+body .container #top .jumbotron #volunteerMod .textbox #right #emailsubmit {
+  background: #004A91;
+  border: none;
+  border-radius: 0;
+}
+/* line 276, style.scss */
+body .container #top .jumbotron #volunteerMod .textbox #right #buttonwrap {
+  padding: 0;
+  float: left;
+}
+/* line 285, style.scss */
+body .container #top .jumbotron #volunteerMod #bottom {
+  text-align: center;
+}
+/* line 288, style.scss */
+body .container #top .jumbotron #volunteerMod #bottom a {
+  position: absolute;
+  margin-left: -105px;
+  bottom: 30px;
+  color: #004A91;
+}
+/* line 297, style.scss */
+body .container #top .jumbotron #volunteerMod #photosMod {
+  padding-left: 0;
+}
+/* line 301, style.scss */
+body .container #top .jumbotron #volunteerMod #photosMod .ph {
+  float: left;
+  margin-top: 15px;
+  margin-right: 20px;
+  height: 60px;
+  width: 170px;
+  background: #3DAF53;
+  border: 2px solid white;
+  color: white;
+  font-family: 'lato';
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  font-variant: small-caps;
+}
+/* line 316, style.scss */
+body .container #top .jumbotron #volunteerMod #photosMod .ph:hover {
+  color: #004A91;
+}
+/* line 326, style.scss */
+body .container #top .jumbotron #aboutMod {
+  margin-top: 10px;
+  border-left: 2px solid white;
+}
+/* line 330, style.scss */
+body .container #top .jumbotron #aboutMod h1 {
+  font-family: 'lato';
+  color: white;
+}
+/* line 335, style.scss */
+body .container #top .jumbotron #aboutMod h3 {
+  font-family: 'lato';
+  color: white;
+}
+/* line 340, style.scss */
+body .container #top .jumbotron #aboutMod p {
+  font-family: 'paul';
+  color: white;
+  font-size: 22px;
+}
+/* line 351, style.scss */
+body .container #bottom {
+  min-height: 600px;
+  padding-top: 100px;
+}
+/* line 355, style.scss */
+body .container #bottom #meetPaul {
+  font-family: 'paul';
+  color: white;
+  font-size: 21px;
+  padding-right: 25px;
+}
+/* line 362, style.scss */
+body .container #bottom #meetPaul2 {
+  font-family: 'paul';
+  color: white;
+  font-size: 21px;
+  padding-right: 25px;
+  border-left: 2px solid white;
+}
+/* line 370, style.scss */
+body .container #bottom #meetPaulTitle {
+  text-align: right;
+  border-right: 2px solid white;
+}
+/* line 376, style.scss */
+body .container #bottom #meetPaulTitle h1 {
+  font-family: 'lato';
+  color: white;
+  font-size: 48px;
+}
+/* line 391, style.scss */
+body .container #issuesPage .cols::before, body .container #issuesPage .jailhouse::before, body .container #issuesPage .morgan::before {
+  margin-left: 0;
+  margin-top: 0;
+  opacity: .1;
+}
+/* line 396, style.scss */
+body .container #issuesPage .cols::after, body .container #issuesPage .jailhouse::after, body .container #issuesPage .morgan::after {
+  margin-left: 0;
+  margin-top: 0;
+}
+/* line 402, style.scss */
+body .container #issuesPage .jumbotron {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  margin-bottom: 100px !important;
+  padding-top: 80px;
+  background: rgba(0, 74, 145, 0.9);
+}
+/* line 414, style.scss */
+body .container #issuesPage #title {
+  text-align: center;
+  padding-top: 50px;
+  height: 150px;
+  color: white;
+  font-variant: small-caps;
+  font-family: 'lato';
+}
+/* line 422, style.scss */
+body .container #issuesPage #title p {
+  font-size: 72px;
+}
+/* line 427, style.scss */
+body .container #issuesPage #title .fadeIn.ng-enter {
+  -webkit-transition: .5s linear all;
+  opacity: 0;
+}
+/* line 436, style.scss */
+body .container #issuesPage #title .fadeIn.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+/* line 440, style.scss */
+body .container #issuesPage #title .fadeIn.ng-leave {
+  opacity: 1;
+}
+/* line 444, style.scss */
+body .container #issuesPage #title .fadeIn.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+/* line 451, style.scss */
+body .container #issues {
+  padding-top: 1%;
+  position: relative;
+}
+/* line 469, style.scss */
+body .container #issues ul:first-child li {
+  padding-top: 20px;
+}
+/* line 476, style.scss */
+body .container #issues ul:nth-child(3) li {
+  padding-top: 20px;
+}
+/* line 482, style.scss */
+body .container #issues ul:nth-child(2) li {
+  padding-top: 40px;
+}
+/* line 488, style.scss */
+body .container #issues ul:nth-child(4) li {
+  padding-top: 40px;
+}
+/* line 493, style.scss */
+body .container #issues ul {
+  margin-top: 14px !important;
+}
+/* line 498, style.scss */
+body .container #issues li {
+  list-style-type: none;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  border-radius: 3px;
+  height: 165px;
+  border: 1px solid #f3f9ff;
+  list-style-position: inside;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  background: #009147;
+}
+/* line 511, style.scss */
+body .container #issues li p {
+  font-family: 'lato';
+  font-size: 28px;
+  color: #f3f9ff;
+  font-weight: lighter;
+}
+/* line 523, style.scss */
+body .container #issues li:hover p {
+  color: #004A91;
+  font-size: 30px;
+  cursor: pointer;
+}
+/* line 533, style.scss */
+body .container #info {
+  padding-top: 1% !important;
+  padding-right: 25px !important;
+  position: relative;
+  text-align: left;
+  padding-left: 0;
+}
+/* line 541, style.scss */
+body .container #info li {
+  list-style-type: none;
+  min-height: 224px;
+  width: 80%;
+  color: white;
+}
+/* line 548, style.scss */
+body .container #info li p {
+  font-family: 'paul';
+  font-size: 18px;
+  color: #f3f9ff;
+  font-weight: 100;
+}
+/* line 557, style.scss */
+body .container #info .fadeIn.ng-enter {
+  -webkit-transition: .5s linear all;
+  opacity: 0;
+}
+/* line 566, style.scss */
+body .container #info .fadeIn.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+/* line 570, style.scss */
+body .container #info .fadeIn.ng-leave {
+  opacity: 1;
+}
+/* line 574, style.scss */
+body .container #info .fadeIn.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+/* line 583, style.scss */
+body .container #volunteerPage .jumbotron {
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 100px;
+  background: rgba(0, 74, 145, 0.9);
+  font-family: 'lato';
+}
+/* line 592, style.scss */
+body .container #volunteerPage .jumbotron #title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 595, style.scss */
+body .container #volunteerPage .jumbotron #title h1 {
+  font-size: 48px;
+  color: white;
+  font-family: 'lato';
+}
+/* line 603, style.scss */
+body .container #volunteerPage .jumbotron form label {
+  color: white;
+}
+/* line 606, style.scss */
+body .container #volunteerPage .jumbotron form .nameInput {
+  width: 150px;
+  float: left;
+  margin-right: 5px;
+}
+/* line 613, style.scss */
+body .container #volunteerPage .jumbotron .form-horizontal {
+  max-width: 450px;
+  padding: 15px;
+  margin: 0 auto;
+}
+/* line 619, style.scss */
+body .container #volunteerPage .jumbotron .form-signin .form-signin-heading,
+body .container #volunteerPage .jumbotron .form-signin .checkbox {
+  margin-bottom: 10px;
+}
+/* line 622, style.scss */
+body .container #volunteerPage .jumbotron .form-signin .checkbox {
+  font-weight: normal;
+}
+/* line 625, style.scss */
+body .container #volunteerPage .jumbotron .form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+/* line 634, style.scss */
+body .container #volunteerPage .jumbotron .form-signin .form-control:focus {
+  z-index: 2;
+}
+/* line 637, style.scss */
+body .container #volunteerPage .jumbotron .form-signin input[type="email"] {
+  margin-bottom: 5px;
+  border-radius: 0;
+  border-radius: 0;
+}
+/* line 642, style.scss */
+body .container #volunteerPage .jumbotron .form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-radius: 0;
+  border-radius: 0;
+}
+/* line 648, style.scss */
+body .container #volunteerPage .jumbotron #submit {
+  border-radius: 0;
+}
+/* line 652, style.scss */
+body .container #volunteerPage .jumbotron #right {
+  color: white;
+  text-align: center;
+  border-right: 2px solid white;
+}
+/* line 656, style.scss */
+body .container #volunteerPage .jumbotron #right h1 {
+  font-size: 48px;
+}
+/* line 659, style.scss */
+body .container #volunteerPage .jumbotron #right #checkboxes {
+  text-align: right;
+  padding-right: 100px;
+}
+/* line 664, style.scss */
+body .container #volunteerPage .jumbotron #right input {
+  margin-left: 10px;
+}
+/* line 671, style.scss */
+body .container #donatePage {
+  height: 140vh;
+  padding-top: 80px;
+}
+/* line 675, style.scss */
+body .container #donatePage #left {
+  color: white;
+  text-align: center;
+  padding-right: 70px;
+}
+/* line 680, style.scss */
+body .container #donatePage #left h1 {
+  font-size: 32px;
+  font-family: 'lato';
+}
+/* line 685, style.scss */
+body .container #donatePage #left p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: justify;
+  font-family: 'paul';
+}
+/* line 691, style.scss */
+body .container #donatePage #left p a {
+  color: #3DAF53;
+  font-weight: bold;
+}
+/* line 699, style.scss */
+body .container #donatePage #left #addressBox #address p {
+  font-size: 16px;
+}
+/* line 703, style.scss */
+body .container #donatePage #left #addressBox #donateFormButton {
+  padding-top: 70px;
+}
+/* line 707, style.scss */
+body .container #donatePage #left #addressBox #donateFormButton button {
+  color: white;
+  font-family: 'lato';
+  font-variant: small-caps;
+  background: #3DAF53;
+  border: 2px solid white;
+  border-radius: 0;
+}
+/* line 713, style.scss */
+body .container #donatePage #left #addressBox #donateFormButton button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #004A91;
+}
+/* line 730, style.scss */
+body .container #donatePage #formContainer {
+  border-left: 2px solid white;
+}
+/* line 733, style.scss */
+body .container #donatePage #donateForm {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+}
+/* line 750, style.scss */
+body .container #donatePage #donateForm .singleRow {
+  width: 400px;
+}
+/* line 754, style.scss */
+body .container #donatePage #donateForm .doubleRow {
+  display: inline;
+  margin-top: 10px;
+  width: 200px;
+}
+/* line 760, style.scss */
+body .container #donatePage #donateForm label {
+  font-family: 'lato';
+  color: white;
+}
+/* line 765, style.scss */
+body .container #donatePage #donateForm .checkbox {
+  margin-left: 105px;
+  text-align: left;
+}
+/* line 770, style.scss */
+body .container #donatePage #donateForm #disclaim {
+  color: white;
+}
+/* line 774, style.scss */
+body .container #donatePage #donateForm #box {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+/* line 779, style.scss */
+body .container #donatePage #donateForm #checkbox {
+  margin-left: 15px;
+}
+/* line 786, style.scss */
+body .container #donatePage #donateForm #inputOccu {
+  margin-left: 10px;
+}
+/* line 790, style.scss */
+body .container #donatePage #donateForm #donateButton {
+  margin-left: 10px;
+}
+/* line 796, style.scss */
+body .container #contactPage {
+  padding: 0;
+}
+/* line 798, style.scss */
+body .container #contactPage .jumbotron {
+  min-height: 100vh;
+  min-width: 100vh;
+  padding-top: 80px;
+  background: rgba(0, 74, 145, 0.9);
+  margin-bottom: 100px;
+}
+/* line 807, style.scss */
+body .container #contactPage .jumbotron #left h1 {
+  font-family: 'lato';
+  color: white;
+}
+/* line 813, style.scss */
+body .container #contactPage .jumbotron form {
+  width: 390px;
+}
+/* line 816, style.scss */
+body .container #contactPage .jumbotron form textarea {
+  width: 320px;
+  margin-left: 85px;
+  margin-bottom: 10px;
+}
+/* line 822, style.scss */
+body .container #contactPage .jumbotron form label {
+  color: white;
+}
+/* line 825, style.scss */
+body .container #contactPage .jumbotron form .doubleRow {
+  margin-right: 10px;
+  width: 150px;
+  display: inline;
+  float: left;
+}
+
+/* Container */
+/* line 838, style.scss */
+#paidFor {
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+/* line 843, style.scss */
+#paidFor #paidForWrapper {
+  margin: 0 auto;
+  max-width: 300px;
+  padding-left: 5px;
+  border: 2px solid #3DAF53;
+}
+/* line 850, style.scss */
+#paidFor h2 {
+  font-family: 'paul';
+  font-size: 18px;
+}
+/* line 856, style.scss */
+#paidFor h3 {
+  font-family: 'paul';
+  font-size: 16px;
+}
+
+/* line 867, style.scss */
+#footer #content {
+  height: 35px;
+  width: 100%;
+  background: #001E3B;
+  padding-top: 5px;
+  padding-right: 50px;
+  text-align: center;
+}
+/* line 876, style.scss */
+#footer #content p {
+  font-family: 'lato';
+  color: #6095CA;
+  font-size: 18px;
+}
+/* line 882, style.scss */
+#footer #content span {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 667px) {
+  /* line 891, style.scss */
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  /* line 894, style.scss */
+  #thenav {
+    width: 100vw !important;
+  }
+
+  /* line 897, style.scss */
+  body {
+    overflow-x: hidden;
+  }
+  /* line 901, style.scss */
+  body .navbar {
+    padding-left: 0;
+  }
+  /* line 905, style.scss */
+  body .navbar .navbar-toggle {
+    margin-top: 15px;
+    margin-right: 50px;
+    color: #004990;
+  }
+  /* line 910, style.scss */
+  body .navbar .navbar-toggle:hover {
+    background: none;
+    color: white;
+  }
+  /* line 917, style.scss */
+  body .navbar .navbar-collapse {
+    border: none;
+  }
+  /* line 922, style.scss */
+  body .navbar .smooth {
+    -webkit-transition: all ease-in 2s;
+  }
+  /* line 926, style.scss */
+  body .navbar .nav {
+    margin: 0;
+    margin-top: 20px;
+    background: #3DAF53;
+  }
+  /* line 931, style.scss */
+  body .navbar .nav li {
+    border: none !important;
+    background: none !important;
+  }
+  /* line 939, style.scss */
+  body .pushDown {
+    margin-top: 275px;
+  }
+  /* line 943, style.scss */
+  body .nav-visible {
+    background: none;
+  }
+  /* line 949, style.scss */
+  body .container #top {
+    height: 130vh;
+    min-height: 900px;
+  }
+  /* line 957, style.scss */
+  body .container #top .jumbotron #volunteerMod .textbox {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+  /* line 964, style.scss */
+  body .container #top .jumbotron #volunteerMod .textbox #left::before {
+    border: none;
+  }
+  /* line 968, style.scss */
+  body .container #top .jumbotron #volunteerMod .textbox #left h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  /* line 980, style.scss */
+  body .container #top .jumbotron #volunteerMod #photosMod .ph {
+    width: 100%;
+  }
+  /* line 987, style.scss */
+  body .container #top .jumbotron #aboutMod {
+    padding-top: 50px;
+    border: none;
+  }
+  /* line 994, style.scss */
+  body .container #bottom {
+    padding-top: 200px;
+  }
+  /* line 997, style.scss */
+  body .container #bottom #meetPaulTitle {
+    text-align: left;
+  }
+  /* line 1000, style.scss */
+  body .container #bottom #meetPaulTitle h1 {
+    font-size: 42px;
+  }
+  /* line 1005, style.scss */
+  body .container #bottom #meetPaul2 {
+    border: none;
+  }
+  /* line 1010, style.scss */
+  body .container #volunteerPage {
+    margin-top: 20px;
+  }
+  /* line 1016, style.scss */
+  body .container #volunteerPage .cols::after {
+    display: none;
+  }
+  /* line 1023, style.scss */
+  body .container #volunteerPage .jumbotron #right {
+    border: none;
+  }
+  /* line 1031, style.scss */
+  body .container #contactPage .singleRow {
+    width: 310px;
+  }
+  /* line 1037, style.scss */
+  body .container #contactPage .jumbotron form textarea {
+    margin-left: 15px;
+    width: 310px;
+  }
+  /* line 1044, style.scss */
+  body .container #contactPage .jumbotron #left h1 {
+    font-size: 30px;
+  }
+  /* line 1052, style.scss */
+  body .container #donatePage #formContainer {
+    border: none;
+  }
+  /* line 1056, style.scss */
+  body .container #donatePage #formContainer #donateForm .doubleRow, body .container #donatePage #formContainer #donateForm .singleRow {
+    margin-left: 10px;
+    width: 80vw;
+    display: flex;
+  }
+  /* line 1062, style.scss */
+  body .container #donatePage #formContainer #donateForm .checkbox {
+    margin-left: 0;
+  }
+  /* line 1072, style.scss */
+  body .container #issuesPage .jumbotron #issues {
+    height: 140vh;
+  }
+  /* line 1081, style.scss */
+  body #footer #content {
+    height: 90px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 850px) {
+  /* line 1099, style.scss */
+  .navbar #navbar .nav li a {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 850px) and (max-width: 975px) {
+  /* line 1119, style.scss */
+  #thenav #navbar .nav li a {
+    font-size: 11px;
+  }
+}
